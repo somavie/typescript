@@ -1,0 +1,2 @@
+# typescript
+Treinamento para typescript
