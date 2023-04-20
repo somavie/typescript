@@ -1,11 +1,61 @@
 "use strict";
 //======> exemplo 01:numeric Enums(Enums Numerico)
-var Idioma;
-(function (Idioma) {
-    Idioma[Idioma["Portugues"] = 0] = "Portugues";
-    Idioma[Idioma["Espanhol"] = 1] = "Espanhol";
-    Idioma[Idioma["Ingles"] = 2] = "Ingles";
-    Idioma[Idioma["Frances"] = 3] = "Frances";
-})(Idioma || (Idioma = {}));
-;
+/*
+enum Idioma{
+
+Portugues,
+Espanhol,
+Ingles,
+Frances,
+
+};
+
 console.log(Idioma);
+
+
+enum Dia{
+
+Segunda='Seg',
+Terca='Ter',
+Quarta='Qua',
+Quinta='Qui',
+Sexta='Sex',
+
+}
+
+console.log(Dia);
+
+
+const enum Comida{
+
+Hamburguer,
+Massa,
+Torta,
+Pizza,
+Churrasco,
+
+}
+
+function comida(c:Comida){
+    return 'comidas muito apetitosas'
+
+}
+
+console.log(comida(Comida.Pizza));
+
+*/
+// Quando usar o Enum?!
+var Tarefa;
+(function (Tarefa) {
+    Tarefa[Tarefa["Todo"] = 0] = "Todo";
+    Tarefa[Tarefa["Progress"] = 1] = "Progress";
+    Tarefa[Tarefa["Done"] = 2] = "Done";
+})(Tarefa || (Tarefa = {}));
+const concluidaTarefa = {
+    id: 1,
+    status: Tarefa.Done,
+    descricao: 'Parabens! Tarefa concluida com sucesso',
+};
+if (concluidaTarefa.status == Tarefa.Done) {
+    console.log('Enviar e-mail: Tarefa Concluida');
+}
