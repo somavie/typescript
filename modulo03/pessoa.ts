@@ -2,7 +2,7 @@ class Pessoa{
 
     private nome: String;
     private idade:number;
-
+    
     constructor(nome: String, idade: number){
   
     this.nome = nome;
